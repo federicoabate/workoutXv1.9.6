@@ -1,0 +1,22 @@
+FITLOCAL — GUIDA INSTALLAZIONE IPHONE
+
+1. Il file ZIP contiene il codice sorgente. Non aprire index.html direttamente dall'app File: IndexedDB può funzionare, ma Service Worker/offline richiede HTTPS.
+2. Pubblica il contenuto della cartella fitlocal su un hosting statico HTTPS gratuito (per esempio GitHub Pages, Cloudflare Pages o Netlify). L'hosting contiene solo il codice dell'app, NON i dati degli allenamenti.
+3. Apri l'indirizzo HTTPS con Safari su iPhone mentre sei online.
+4. Safari: Condividi > Aggiungi alla schermata Home > Aggiungi (in alcune versioni: Apri come app web).
+5. Avvia WorkoutX dall'icona della Home, attendi il caricamento iniziale e prova in modalità aereo. Non usare la scheda Safari al posto dell'app installata per il diario principale.
+6. Tutti i programmi, gli esercizi e lo storico sono memorizzati in IndexedDB nello spazio dell'app sul dispositivo. Non cancellare dati dei siti web, non rimuovere l'app senza aver fatto un backup.
+7. In Impostazioni > Esporta backup: scegli una password forte e salva il file JSON tramite il foglio di condivisione nell'app File, possibilmente nella sezione Sul mio iPhone. Se perdi la password, il backup cifrato non è recuperabile.
+8. Ripeti il backup dopo ogni sessione importante. Mantieni anche una copia indipendente, per esempio su un computer o chiavetta. La sola memoria del telefono non protegge dal furto o dal guasto del telefono.
+9. Per ripristinare: Impostazioni > Importa backup, seleziona il file, inserisci la password se richiesta e conferma. ATTENZIONE: sostituisce i dati correnti.
+10. Il timer usa l'orologio del dispositivo, ma iOS può sospendere l'app in background: non sono implementate notifiche locali di fine recupero.
+
+LIMITI DELLA PRIMA VERSIONE
+- Nessuna verifica end-to-end su iPhone reale eseguita.
+- Le sessioni in corso non sono ancora salvate automaticamente se iOS termina il processo: completa e salva la sessione prima di chiudere l'app.
+- Non è previsto un sistema di sincronizzazione multi-dispositivo.
+- I dati IndexedDB non sono cifrati separatamente dall'archiviazione iOS; il backup può essere cifrato con password.
+- La PWA può essere soggetta alle politiche di eliminazione dei dati locali di iOS: i backup sono indispensabili.
+- Le statistiche di carico distinguono kg e BW+kg; BW+kg è il solo sovraccarico, non il peso totale. RM e percentuali sono memorizzati, ma non convertiti automaticamente in kg.
+
+PERSONALIZZAZIONE: tema scuro, arancione #F76C32 e icone PNG per iPhone.
