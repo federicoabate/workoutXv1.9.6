@@ -20,3 +20,12 @@ LIMITI DELLA PRIMA VERSIONE
 - Le statistiche di carico distinguono kg e BW+kg; BW+kg è il solo sovraccarico, non il peso totale. RM e percentuali sono memorizzati, ma non convertiti automaticamente in kg.
 
 PERSONALIZZAZIONE: tema scuro, arancione #F76C32 e icone PNG per iPhone.
+
+WorkoutX v6 (test):
+- Grafico aggiuntivo del volume per ogni esercizio: somma dei kg effettivi x ripetizioni di tutti i set completati, per allenamento. Per BW puro, durata e distanza senza kg il volume in kg x reps è zero.
+- 1RM stimato dal PR storico dell'esercizio (massimo carico in kg, a parità di carico massimo reps; set 1-15 reps), oppure 1RM manuale. I set in RM/% salvano i kg calcolati nel momento del completamento.
+- Nuovi esercizi durante una sessione: manuali o da archivio, senza modificare il programma originale.
+- Suggerimenti testuali accessibili tramite pulsante a tendina e lista scorrevole, senza bloccare la digitazione.
+- Cache offline aggiornata a v6. Prima di aggiornare l'app principale esportare un backup.
+
+Versione v9: set comprimibili, editor set compatto, suggerimenti disattivati per carico già inserito, PR e stima 1RM allineati al filtro statistiche.
