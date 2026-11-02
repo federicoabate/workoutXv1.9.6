@@ -29,3 +29,9 @@ WorkoutX v6 (test):
 - Cache offline aggiornata a v6. Prima di aggiornare l'app principale esportare un backup.
 
 Versione v9: set comprimibili, editor set compatto, suggerimenti disattivati per carico già inserito, PR e stima 1RM allineati al filtro statistiche.
+
+
+WorkoutX v1.3 BETA (02/11/2026)
+Aggiornamento sperimentale. Prima di sostituire la versione principale, conservare il backup della v1.2 e verificare il ripristino su un repository di prova. Il formato JSON schema 1 e IndexedDB fitlocal-v1 sono mantenuti. Nuovi campi opzionali: profile, bodyHistory, favorite. Non e stata verificata la compatibilita con ogni possibile backup reale.
+
+WorkoutX v1.4: set effettivi separati, inizialmente non eseguiti, propagazione solo ai successivi non eseguiti, sezione completati, gestione rapida e timer rimosso.
