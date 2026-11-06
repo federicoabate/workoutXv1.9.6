@@ -81,3 +81,55 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .category-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.category-options button{text-align:left;min-height:44px}.top-sets{border:2px solid #F76C32!important;background:linear-gradient(115deg,rgba(247,108,50,.13),transparent 55%),#1c1d21!important;box-shadow:0 0 0 2px rgba(247,108,50,.12)}.linked-exercise{border-left:4px solid #F76C32!important;margin-top:-7px!important;border-top-left-radius:3px!important}.relation-next{border-left:3px solid #F76C32;padding:8px 12px;margin:7px 0 0;color:#F76C32;font-weight:600;font-size:12px}.cluster-panel{background:#222329;border:1px solid #34363b;border-radius:10px;padding:8px;margin:7px 0}.cluster-panel .toolbar{margin:0}.cluster-chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}.cluster-chips span{background:#303139;border-radius:6px;padding:5px 7px;font-size:11px;color:#e9e9e9}
 
 .chart-actions{display:flex;justify-content:flex-end;margin:0 0 6px}.chart-fullscreen{position:fixed;inset:0;z-index:99999;background:#101114;color:#f5f5f5;display:flex;flex-direction:column;padding:env(safe-area-inset-top) 10px env(safe-area-inset-bottom);box-sizing:border-box}.chart-full-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:8px}.chart-full-canvas{flex:1;min-height:0;width:100%;touch-action:none;display:block}.chart-full-hint{font-size:12px;text-align:center;color:#a5a7ad;padding:8px}.chart-full-head .toolbar{display:flex;gap:5px;flex-wrap:wrap}
+/* v1.8 compact session and linked-group polish */
+.setting-info{line-height:1.7}.setting-value{display:inline-block;color:#F76C32;background:#35241c;border:1px solid #805038;border-radius:6px;padding:2px 6px;font-size:13px}
+.relation-badge{font-size:15px!important;font-weight:850!important;letter-spacing:.35px;padding:8px 12px!important;border-width:2px!important;border-radius:9px!important}
+.ex-variant{color:#F76C32!important;font-weight:650!important}.set-ex-name{color:#F76C32!important;font-weight:650!important;font-size:12px!important}
+.quick-intensity,.intensity-label,.quick-intensity select,.quick-intensity input{color:#F76C32!important;font-weight:750!important}
+.session-plan{display:flex;align-items:center;gap:6px;flex-wrap:wrap;background:#24242b;border:1px solid #454049;border-radius:9px;padding:7px 9px;margin:7px 0;font-size:11px}
+.session-plan>span:not(.plan-caption){white-space:nowrap;color:#a7a4ad}.session-plan b{color:#fff;font-size:12px}.plan-caption{font-size:9px;color:#F76C32;font-weight:800;letter-spacing:.3px;width:100%}
+.session-advice{display:flex;flex-wrap:wrap;column-gap:9px;row-gap:2px;color:#F76C32;font-size:11px;margin:5px 0}.session-advice span{white-space:nowrap}
+.set-number{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}.done-inline{display:inline-flex!important;align-items:center;gap:3px;font-size:11px!important;font-weight:500;color:#F76C32;white-space:nowrap}.done-inline input{width:16px!important;height:16px!important;accent-color:#F76C32;margin:0}
+.relation-next{position:relative;border-left:4px solid #F76C32!important;margin:7px 0 0 16px!important;padding:9px 12px!important;color:#F76C32!important;font-size:14px!important;font-weight:800!important}
+.linked-arrow{position:relative;margin-top:17px!important}.linked-arrow:before{content:'↓';position:absolute;top:-25px;left:14px;color:#F76C32;font-size:27px;font-weight:900;line-height:25px}
+
+/* v1.9: compattezza e leggibilità */
+.ex-variant{color:#fff!important;font-weight:600!important}
+.setting-value{color:#fff!important;background:#282a30!important;border-color:#565963!important}
+.done-inline,.done-word{color:var(--text,#e6e6e6)!important}
+.done-inline input{accent-color:#25b46b!important}
+.session-plan{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px!important;padding:7px 5px!important;align-items:center!important}
+.session-plan .plan-caption{grid-column:1/-1;border-bottom:1px solid #41434a;padding-bottom:5px;margin-bottom:4px}
+.session-plan>span:not(.plan-caption){min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;white-space:normal!important;font-size:9px!important;overflow-wrap:anywhere}
+.session-plan b{font-size:11px!important;line-height:1.25}
+.session-plan>span:nth-child(2),.session-plan>span:nth-child(3){border-right:1px solid #494b51}
+
+.set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 10px minmax(0,1fr) 46px!important;gap:4px!important}
+.set-multiply{align-self:center;justify-self:center;font-size:13px;color:#999}
+.set-entry .field span{font-size:10px!important}
+.set-entry .field:has([data-setfield="rpe"]){max-width:46px}
+.exercise-move{display:flex;justify-content:flex-end;gap:3px;margin-top:3px}
+.exercise-move .btn{padding:2px 8px!important;min-height:24px!important}
+.skip-btn{display:block;margin:6px 0 0 auto;padding:3px 11px!important;font-size:11px!important}
+.fixed-table .row{justify-content:flex-end}
+@media(max-width:420px){.set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 8px minmax(0,1fr) 42px!important;gap:3px!important}.session-plan b{font-size:10px!important}}
+
+/* v1.9.2: center the decorative multiplication sign between Valore and Reps */
+.set-multiply{display:flex;align-items:center;justify-content:center;align-self:stretch;justify-self:stretch;padding-top:14px;line-height:1}
+
+.session-settings{margin:8px 0}
+.session-settings summary{cursor:pointer;font-weight:600}
+.session-settings-content{padding:8px 0 4px;line-height:1.8}
+.session-settings-content strong{color:#fff;font-weight:700}
+
+/* v1.9.5: only the four-field load/reps/RPE row; leave other set layouts unchanged */
+.set-entry.set-entry-reps-rpe{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(58px,1fr) 46px!important;gap:6px!important}
+.set-entry.set-entry-reps-rpe>.field,.set-entry.set-entry-reps-rpe>div{min-width:0}
+.set-entry.set-entry-reps-rpe .field span{white-space:nowrap}
+@media(max-width:420px){.set-entry.set-entry-reps-rpe{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(52px,1fr) 42px!important;gap:5px!important}}
+
+/* v1.9.6: layout specifico delle serie senza RPE e spiegazione muscolare */
+.set-entry.set-entry-reps-only{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(68px,1fr)!important;gap:6px!important}
+.set-entry.set-entry-reps-only>.field,.set-entry.set-entry-reps-only>div{min-width:0}
+.set-entry.set-entry-reps-only .field span{white-space:nowrap}
+.muscle-help{margin-top:12px}.muscle-help details{border-top:1px solid #36383d;padding:10px 0}.muscle-help summary{cursor:pointer;font-weight:600}.muscle-help table{width:100%;font-size:12px;margin:8px 0;border-collapse:collapse}.muscle-help td,.muscle-help th{padding:6px;border-bottom:1px solid #35363a;text-align:left}.muscle-formula{font-size:13px;line-height:1.8;margin:8px 0}.muscle-chart-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.muscle-example-chart{width:100%;height:auto}.muscle-help h4{margin:12px 0 5px}.muscle-chart-pair small{font-size:11px;color:#aaa}.save-targets{display:flex;flex-direction:column;align-items:stretch}
